@@ -1,0 +1,18 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: maven
+    tag: 3.3.3-jdk-8
+
+inputs:
+- name: maven-hello-world
+
+run:
+  path: sh
+  args:
+    - -exc
+    - |
+      cd maven-hello-world
+      mvn test

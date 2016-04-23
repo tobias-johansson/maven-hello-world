@@ -1,0 +1,13 @@
+resources:
+- name: flight-school
+  type: git
+  source:
+    uri: https://github.com/tobias-johansson/maven-hello-world
+    branch: master
+
+jobs:
+- name: maven-hello-world test
+  plan:
+  - get: maven-hello-world
+  - task: test
+    file: maven-hello-world/ci/build.yml
