@@ -1,5 +1,5 @@
 resources:
-- name: flight-school
+- name: maven-hello-world
   type: git
   source:
     uri: https://github.com/tobias-johansson/maven-hello-world

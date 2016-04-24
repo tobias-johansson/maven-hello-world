@@ -15,4 +15,4 @@ run:
     - -exc
     - |
       cd maven-hello-world
-      mvn test
+      mvn package
